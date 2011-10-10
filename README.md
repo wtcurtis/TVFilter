@@ -11,8 +11,15 @@ Searches the given directory for basically single episodes contained in director
 
 `python tvfiltermulti.py <directory to search> <path prefix to move to>`
 
+# scraper.py
+Right now, just scrapes a wikipedia list-of-episodes document for episode names. Returns a map, like:
+`metadata[<season number>][<episode number>]`
+
 # renamer.py
-renamer.py is pretty much set up to scrape a Wikipedia list-of-episodes document for episode names, and rename files in the given directory (filenames are assumed to be in the format created by the tvfilter*.py)
+renamer.py renames files in the given directory (filenames are assumed to be in the format created by the tvfilter*.py) using the metadata provided.
+
+metadata is scraped using scraper.py.
+
 
 `renamer.renameAll(<path of the episode files>, <metadata stream>)`
 
