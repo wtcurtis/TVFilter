@@ -1,6 +1,8 @@
 # Overview
 Rough couple of scripts to handle moving / renaming TV episodes downloaded from usenet. I'll clean these up eventually, but they work pretty well at the moment. Of course they crash spectacularly if any number of assumptions don't hold, but whatever.
 
+Since these are pretty slapped-together, I don't trust them at all; each rename or move requires confirmation.
+
 # tvfilterone.py
 Pulls all of the actual episodes from a single directory, renames, and moves to a given path.
 
