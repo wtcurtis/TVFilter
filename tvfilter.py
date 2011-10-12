@@ -13,7 +13,7 @@ def formatName(match, repPat):
     fString = os.path.join('{0}', 'Season {1:0>2}', '{0} - {1:0>2}x{2:0>2}')
 
     fString += '.avi'
-    
+
     return fString.format(*groups)
 
 def makeDirIfNecessary(filename):
@@ -99,16 +99,3 @@ def processSingle(directory, threshold, prefix, patterns = [r"^([\w \.]*)[Ss]{1}
     filtered = [(a[0], os.path.join(prefix, a[1])) for f in filtered]
 
     return moveAll(filtered)
-
-    
-
-
-def main():
-    if(len(sys.argv) != 4):
-        usage()
-    d = sys.argv[1]
-    thresh = int(sys.argv[2])
-    pref = sys.argv[3]
-
-if __name__ == '__main__':
-    main()
