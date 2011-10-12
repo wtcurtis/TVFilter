@@ -20,6 +20,7 @@ Right now, just scrapes a wikipedia list-of-episodes document for episode names.
 `metadata[<season number>][<episode number>]`
 
 # renamer.py
+
 renamer.py renames files in the given directory (filenames are assumed to be in the format created by the tvfilter\*.py) using the metadata provided.
 
 metadata should be a map like returned by scraper.py: `metadata[<season number>][<episode number>]`
